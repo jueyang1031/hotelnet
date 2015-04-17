@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+<persistence-unit name="HotelNet" transaction-type="RESOURCE_LOCAL">
+<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+<class>neu.edu.cs5200.hotelnet.entity.Commentary</class>
+<class>neu.edu.cs5200.hotelnet.entity.Customer</class>
+<class>neu.edu.cs5200.hotelnet.entity.Favorite</class>
+<class>neu.edu.cs5200.hotelnet.entity.Follow</class>
+<class>neu.edu.cs5200.hotelnet.entity.Hotel</class>
+<class>neu.edu.cs5200.hotelnet.entity.Reservation</class>
+<properties>
+<property name="eclipselink.jdbc.password" value=""/>
+<property name="eclipselink.jdbc.user" value="root"/>
+<property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+<property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/HOTEL"/>
+<property name="eclipselink.logging.level" value="ALL"/>
+</properties>
+</persistence-unit>
+</persistence>
